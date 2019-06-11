@@ -5,11 +5,10 @@ use OpenCensus\Trace\Exporter\OneLineEchoExporter;
 use OpenCensus\Trace\Tracer;
 
 $exporter = new OneLineEchoExporter();
-// $exporter = new \OpenCensus\Trace\Exporter\StackdriverExporter();
 Tracer::start($exporter);
 
-Tracer::inSpan(['name' => 'hello-world'], function () {
+Tracer::inSpan(['name' => 'test-span'], function () {
     sleep(1);
-    echo 'hello';
+    echo 'hello' . PHP_EOL;
 });
 
