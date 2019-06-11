@@ -1,0 +1,15 @@
+{
+    "name": "castaneai/php-opencensus-example",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "castaneai",
+            "email": "castaneai@castaneai.net"
+        }
+    ],
+    "require": {
+        "opencensus/opencensus": "~0.2",
+        "opencensus/opencensus-exporter-stackdriver": "~0.1"
+    }
+}
