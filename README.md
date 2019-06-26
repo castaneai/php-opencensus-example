@@ -4,7 +4,9 @@
 
 ```sh
 $ docker-compose up -d
+$ docker-compose run php composer install
 $ curl http://localhost:8080
+
 hello
 [  1053.83 ms] /
   [http.status_code] 200
